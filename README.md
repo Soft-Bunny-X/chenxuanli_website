@@ -10,5 +10,5 @@
 ### To Access the Site from A Machine Connected to the Local Network
 
 1. go to the network setting of the device that runs the server program and obtain it's local IP address
-2. to access from another device in the same local network, simply use the local IP address obtained form step 1 as the url in the browser
-3. to access from the same device that runs the server app, simply use localhost as the url in the browser
+2. to access from another device in the same local network, simply use the local IP address obtained form step 1 as the URL in the browser
+3. to access from the same device that runs the server app, simply use localhost as the URL in the browser
