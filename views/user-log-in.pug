@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1.greeting Start Your #[strong Unique] Experience Today!
+    //- div.single-form
+    form#LogIn.credential(method="POST", action="")
+        div.email-section(title="User's email address")
+            label(for="emailInput") Email:#[br]
+            input#emailInput(type="email", placeholder="example@server.com", name="email", required)
+        div.password-section(title="User's password. Recommend a combination of letter, number, and special characters")
+            label(for="passwordInput") Password:#[br]
+            input#passwordInput(type="pasword", placeholder="example-password", name="password", minlength="8", maxlength="50", required)
+        div.submission-section
+            button(type="submit") Submit

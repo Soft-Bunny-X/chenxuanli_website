@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="icon", type="image/x-icon", href="/images/favicon.ico")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.header
+    
+    ul.nav-bar
+        li #[a.nav-button(href="/") Home]
+        li #[a.nav-button(href="/about") About]
+        li #[a.nav-button(href="/gallery") Gallery]
+        li #[a.nav-button(href="/user") User]
+        li.float-right #[a.nav-button(href="/donation") Donation]
+
+    div.main
+      block content
+
+    div.footer
+      div.column
+        p.footer-tag Contact:
+        a(href="mailto:nickchenxuanli@outlook.com") nickchenxuanli@outlook.com
+

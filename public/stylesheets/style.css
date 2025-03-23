@@ -1,0 +1,210 @@
+html {
+  /* width: 100vw; */
+  margin: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 3000px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+.header {
+  height: 2rem;
+}
+
+.nav-bar {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #DDD;
+}
+
+.nav-bar > li {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  border-left: 2px solid #A22;
+}
+
+.float-right {
+  float: right;
+}
+
+.nav-button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.nav-button:hover {
+  background-color: #222;
+  color: #DDD;
+}
+
+@media (max-width: 1500px) and (max-aspect-ratio: 10/16) and (min-resolution: 250dpi) {
+  html {
+    font-size: 5vw;
+  }
+
+  .nav-bar > li{
+    display: block;
+    margin: 0;
+    /* width: 100%; */
+    border-left: none;
+    border-top: 2px solid #A22;
+  }
+
+  .float-right {
+    float: none;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+}
+
+.main {
+  /* min-height: 100%; */
+  padding: 2rem;
+}
+
+.footer {
+  display: block;
+  min-height: 8rem;
+  padding: 2rem;
+  background-color: #DDD;
+}
+
+.footer .column {
+  display: inline-block;
+  width: 33%;
+}
+
+.footer .footer-tag {
+  padding: 1rem 0 0 0;
+  border-top: 2px solid black;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer a:hover {
+  color: #00B7FF;
+}
+
+.greeting {
+  font-size: 4vw;
+  text-align: center;
+  margin: 4vw;
+}
+
+strong {
+  color: #A22;
+  font-weight: 700;
+  font-size: 150%;
+}
+
+.log-in {
+  margin: 0;
+  list-style: none;
+}
+
+.log-in > li {
+  text-align: center;
+  font-size: 2vw;
+  margin: 2vw;
+}
+
+.log-in a {
+  display: inline-block;
+  padding: 1vw;
+  margin: 1vw;
+  width: 30vw;
+  border-radius: 5vw;
+}
+
+.login-button {
+  background-color: #A22;
+  color: #DDD;
+}
+
+.signup-button {
+  background-color: #DDD;
+  color: #222;
+}
+
+.log-in a:hover {
+  background-color: #555;
+  color: #DDD;
+}
+
+form.credential {
+  margin: 10% 20% 10% 20% ;
+  padding: 5vw;
+  align-items: center;
+  background-color: #DDD;
+  border-radius: 5vw;
+}
+
+form.credential > div {
+  margin: 0;
+  align-items: center;
+}
+
+form.credential > div > * {
+  margin: 1vw;
+  font-size: 2vw;
+  height: 4vw;
+  width: 100%;
+  border-radius: 1vw;
+}
+
+form.credential > div > button {
+  margin: 4vw 1vw 2vw 1vw
+}
+
+form.credential > div > input:hover, form.credential > div > button:hover {
+  border: 4px solid #A22;
+}
+
+span.vertical-nav-bar-left {
+  display: inline-block;
+  width: 15%;
+  height: 80%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #DDD;
+  border-radius: 1rem;
+}
+
+span.content-window {
+  display: inline-block;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
+  width: 75%;
+  height: 80%;
+  background-color: #DDD;
+  border-radius: 1rem;
+}
+
+.vertical-nav-bar-left ul {
+  list-style: none;
+}

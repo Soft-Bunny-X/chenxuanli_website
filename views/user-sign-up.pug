@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1.greeting Start Your #[strong Unique] Experience Today!
+    //- The sign-up form send post request on the same url
+    form#signUp.credential(method="POST", action="")
+        div.email-section(title="User's email address")
+            label(for="emailInput") Email:#[br]
+            input#emailInput(type="email", placeholder="example@server.com", name="email", required)
+        div.username-section(title="Username that is displayed to other users. This can be changed in the user's setting later")
+            label(for="usernameInput") Username:#[br]
+            input#usernameInput(type="text", placeholder="example-username", name="username", maxlength="30", required)
+        div.password-section(title="User's password. Recommend a combination of letter, number, and special characters")
+            label(for="passwordInput") Password:#[br]
+            input#passwordInput(type="password", placeholder="example-password", name="password", minlength="8", maxlength="50", required)
+        div.submission-section
+            button(type="submit") Submit
+    
+    if errors
+        ul
+            for error in errors
+                li!= error.msg
