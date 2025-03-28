@@ -313,14 +313,14 @@ exports.user_log_in_post = [
             // set cookie with authentication token
             res.cookie("authToken", token, {
                 httpOnly: true,
-                secure: true,
+                // secure: true,
                 sameSite: "strict",
                 maxAge: 604800000
             });
 
             res.cookie("userID", userTemporary.userID.toString(), {
                 httpOnly: true,
-                secure: true,
+                // secure: true,
                 sameSite: "strict",
                 maxAge: 604800000
             });

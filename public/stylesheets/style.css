@@ -208,3 +208,13 @@ span.content-window {
 .vertical-nav-bar-left ul {
   list-style: none;
 }
+
+.error-list li {
+  list-style: none;
+  margin: 0 20% 0 20%;
+  font-size: 4rem;
+  color: #F00;
+  background-color: #DDD;
+  border-radius: 1rem;
+  text-align: center;
+}

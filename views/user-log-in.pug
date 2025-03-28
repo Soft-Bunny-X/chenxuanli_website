@@ -2,7 +2,12 @@ extends layout
 
 block content
     h1.greeting Start Your #[strong Unique] Experience Today!
-    //- div.single-form
+
+    if errors
+        ul.error-list
+            for error in errors
+                li!= error.msg
+
     form#LogIn.credential(method="POST", action="")
         div.email-section(title="User's email address")
             label(for="emailInput") Email:#[br]
@@ -17,8 +22,3 @@ block content
             br
             br
             a(href="/user/recovery") I forgot my password
-    
-    if errors
-        ul
-            for error in errors
-                li!= error.msg

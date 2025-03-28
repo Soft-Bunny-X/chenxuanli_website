@@ -2,6 +2,12 @@ extends layout
 
 block content
     h1.greeting Enter Your User Email And Your New Password to Continue
+
+    if errors
+        ul.error-list
+            for error in errors
+                li!= error.msg
+
     //- The sign-up form send post request on the same url
     form#signUp.credential(method="POST", action="")
         div.email-section(title="User's email address")
@@ -12,8 +18,3 @@ block content
             input#passwordInput(type="password", placeholder="example-password", name="password", minlength="8", maxlength="50", required)
         div.submission-section
             button(type="submit") Submit
-    
-    if errors
-        ul
-            for error in errors
-                li!= error.msg
